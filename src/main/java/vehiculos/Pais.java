@@ -1,14 +1,14 @@
-package vehiculos;
-
-import java.util.HashMap;
-
+package vehiculos; 
+import java.util.HashMap; 
 import java.util.Map;
 import java.util.Map.Entry;
+
 public class Pais {
 	private String nombre;
 	static Map<Pais, Integer> ventasPorPais = new HashMap <Pais, Integer>();
 	
-	public static Pais paisMasVendedor() {
+	public static Pais paisMasVendedor() 
+	{
 		int valorMax = -1;
 		Pais paisMasVendedor = null;
 
@@ -24,6 +24,10 @@ public class Pais {
 		
 		return paisMasVendedor;
 	}
+	
+	public Pais(String nombre) {
+		this.nombre = nombre;
+	}
 
 	public String getNombre() {
 		return nombre;
@@ -33,7 +37,5 @@ public class Pais {
 		this.nombre = nombre;
 	}
 	
- 	
-		
-	
+
 }
